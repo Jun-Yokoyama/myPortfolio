@@ -1,0 +1,19 @@
+.arrow{
+  width: 20px;
+  height: 5px;
+  @media print{
+    display: none;
+  }
+  &__nav{
+    @include white-arrow();
+    @include mq(xl){
+      display: none;
+    }
+  }
+  &__footer{
+    @include white-arrow($right: 6%);
+    @include mq(lg){
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+body{
+  font-family: 'Noto Serif JP', 'Noto Serif', serif;
+  letter-spacing: .05em;
+  line-height: 1.5;
+  @include fontSize(16);
+}
+a{
+  text-decoration: none;
+}
+.screenReaderOnly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}

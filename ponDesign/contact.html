@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="#" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PON DESIGN" />
+  <meta property="og:description" content="Your description" />
+  <meta property="og:image" content="#" />
+  <meta name="description" content="websiteの説明">
+  <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/logo/android-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>contact</title>
+</head>
+
+<body class="body" id="js_body">
+  <header>
+    <nav class="nav" id="js_nav">
+      <div class="nav__wrapper">
+        <a href="index.html" class="logo" id="js_logo">PON DESIGN</a>
+
+        <div class="hamburger" id="js_burger" aria-controls="js_menu" aria-expanded="false"
+          aria-label="Toggle navigation button" role="button">
+          <span class="hamburger__top" id="js_burgerTop"></span>
+          <span class="hamburger__middle" id="js_burgerMiddle"></span>
+          <span class="hamburger__bottom" id="js_burgerBottom"></span>
+        </div>
+
+        <div class="nav__menu-pc">
+          <a class="nav__link-pc" href="index.html">HOME</a>
+          <a class="nav__link-pc" href="news.html">NEWS</a>
+          <a class="nav__link-pc" href="service.html">SERVICE</a>
+          <a class="nav__link-pc" href="works.html">WORKS</a>
+          <a class="nav__link-pc" href="company.html">COMPANY</a>
+          <a class="nav__link-pc" href="recruit.html">RECRUIT</a>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="nav__menu-sp" id="js_menu">
+        <ul class="nav__list-sp">
+          <li><a class="nav__link-sp" href="index.html">HOME</a></li>
+          <li><a class="nav__link-sp" href="news.html">NEWS</a></li>
+          <li><a class="nav__link-sp" href="service.html">SERVICE</a></li>
+          <li><a class="nav__link-sp" href="works.html">WORKS</a></li>
+          <li><a class="nav__link-sp" href="company.html">COMPANY</a></li>
+          <li><a class="nav__link-sp" href="recruit.html">RECRUIT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- top -->
+    <section class="sub-hero">
+      <div class="sub-hero__heading">
+        <h2 class="sub-hero__heading-primary">CONTACT</h2>
+        <p class="sub-hero__heading-secondary">お問い合わせ</p>
+      </div>
+    </section>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb" aria-label="breadcrumb">
+      <div class="breadcrumb__inner">
+        <a href="index.html" class="breadcrumb__link">HOME</a>
+        <span class="breadcrumb__arrow" aria-hidden="true">></span>
+        <span class="breadcrumb__link breadcrumb__link--active" aria-current="page">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="contact-page">
+      <p class="contact-page__copy">Webサイトの制作のご依頼やお見積りなど、
+        お気軽にご相談ください。</p>
+
+      <form class="form">
+        <p class="form__title">お問い合わせ種別<span class="form__reqired">*必須</span></p>
+        <div class="form__radio-wrapper">
+          <div class="form__radio">
+            <input type="radio" id="job-offer" name="inquiry"　value="1" class="form__radio-btn" aria-labelledby="whatKind1"
+              required checked>
+            <label id="whatKind1" for="job-offer" class="form__radio-label" aria-hidden="true">お仕事のご依頼・ご相談</label>
+          </div>
+
+          <div class="form__radio">
+            <input type="radio" id="budget" name="inquiry"　value="2" class="form__radio-btn" aria-labelledby="whatKind2">
+            <label id="whatKind2" for="budget" class="form__radio-label" aria-hidden="true">お見積もりのご依頼</label>
+          </div>
+
+          <div class="form__radio">
+            <input type="radio" id="job-opening" name="inquiry"　value="3" class="form__radio-btn" aria-labelledby="whatKind3">
+            <label id="whatKind3" for="job-opening" class="form__radio-label" aria-hidden="true">採用について</label>
+          </div>
+
+          <div class="form__radio">
+            <input type="radio" id="other" name="inquiry"　value="4" class="form__radio-btn" aria-labelledby="whatKind4">
+            <label id="whatKind4" for="other" class="form__radio-label" aria-hidden="true">その他</label>
+          </div>
+        </div>
+
+        <div class="form__text-wrapper">
+          <div class="form__text">
+            <label for="formName" class="form__title">お名前<span class="form__reqired">*必須</span></label>
+            <input type="text" class="form__text-box form__text-box--wide" id="formName" required>
+          </div>
+
+          <div class="form__text">
+            <label for="formCompany" class="form__title">会社名</label>
+            <input type="text" class="form__text-box form__text-box--wide" id="formCompany">
+          </div>
+
+          <div class="form__text">
+            <label for="formMail" class="form__title">メールアドレス<span class="form__reqired">*必須</span></label>
+            <input type="email" class="form__text-box form__text-box--wide" id="formMail" required>
+          </div>
+
+          <div class="form__text">
+            <label for="formPhone" class="form__title">お電話番号<span class="form__title-detail"
+                id="phoneHelp">（半角数字ハイフンなし）</span></label>
+            <input type="tel" class="form__text-box form__text-box--narrow" id="formPhone" aria-describedby="phoneHelp">
+          </div>
+
+          <div class="form__text">
+            <label for="formDetail" class="form__title">お問い合わせ内容<span class="form__reqired">*必須</span></label>
+            <textarea class="form__text-box form__text-box--wider" id="formDetail" required></textarea>
+          </div>
+
+          <div class="form__text">
+            <label for="formSelect" class="form__title">PON DESIGNをどちらでお知りになりましたか？<span
+                class="form__reqired">*必須</span></label>
+            <select class="form__text-box form__select" id="formSelect" required>
+              <option selected disabled value="">選択してください</option>
+              <option value="1">Google/Yahoo検索</option>
+              <option value="2">SNS</option>
+              <option value="3">ブログ</option>
+              <option value="4">友人や知人</option>
+              <option value="5">その他</option>
+            </select>
+          </div>
+        </div>
+        <a href="#" type="submit" class="btn btn--purple">送信する</a>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__list">
+      <a class="footer__link" href="index.html">HOME</a>
+      <a class="footer__link" href="news.html">NEWS</a>
+      <a class="footer__link" href="service.html">SERVICE</a>
+      <a class="footer__link" href="works.html">WORKS</a>
+      <a class="footer__link" href="company.html">COMPANY</a>
+      <a class="footer__link" href="recruit.html">RECRUIT</a>
+      <a class="footer__link" href="#" aria-current="page">CONTACT</a>
+    </div>
+    <a href="index.html" class="footer__copyright">© PON DESIGN</a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" id="js_toPageTop"
+      class="footer__arrow" viewBox="0 0 16 16" aria-hidden="true">
+      <path fill-rule="evenodd"
+        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+    </svg>
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

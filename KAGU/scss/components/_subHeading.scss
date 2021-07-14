@@ -1,0 +1,27 @@
+.sub-heading{
+  text-align: center;
+  &-primary{
+    font-weight: 500;
+    letter-spacing: .15em;
+    padding-bottom: 3px;
+    @include font-size(20);
+    @include mq(lg){
+      padding-bottom: .7%;
+      @include font-size(24);
+    }
+    &--white{
+      color: $white;
+      @media print{
+        color: $white !important;
+      }
+    }
+  }
+  &-secondary{
+    color: $brown;
+    font-weight: 700;
+    text-transform: uppercase;
+    &--white{
+      color: $white;
+    }
+  }
+}

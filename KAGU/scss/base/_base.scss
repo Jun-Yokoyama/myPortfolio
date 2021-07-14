@@ -1,0 +1,17 @@
+body{
+  font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+  letter-spacing: .05em;
+  @include font-size(14);
+  @include mq(lg){
+    @include font-size(15);
+  }
+}
+main{
+  @extend %max-width-1500px;
+}
+a{
+  text-decoration: none;
+}
+.overflow-hidden{
+  overflow: hidden;
+}

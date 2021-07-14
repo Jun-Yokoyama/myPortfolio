@@ -1,0 +1,11 @@
+.cart{
+  width: 17px;
+  height: 17px;
+  &--pc{
+    width: 20px;
+    height: 21px;
+    @media print{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.news-page{
+  padding: 40px 20px 80px;
+  @include mq(md){
+    padding: 40px 25px 80px;
+  }
+  @include mq(lg){
+    @include layout-center(950px);
+    padding: 60px 30px 110px;
+  }
+  &__pagenation{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+    &-item{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #7633A4, $purple2);
+      &:first-child{
+        background: #F1EBF8;
+      }
+    }
+    &-link{
+      display: block;
+      border-radius: 50%;
+      color: $white;
+      font-weight: 700;
+      line-height: 45px;
+      text-align: center;
+      @include font-size(20);
+      &:hover{
+        color: $white;
+      }
+      &--current{
+        color: #4F31A5;
+        pointer-events: none;
+      }
+    }
+  }
+}

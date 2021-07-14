@@ -1,0 +1,95 @@
+.nav{
+  position: fixed;
+  top: 25px;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 0 15px;
+  transition: .5s;
+  z-index: 9999;
+  @include mq(md){
+    height: 95px;
+    top: -10px;
+  }
+  &__wrapper{
+    height: inherit;
+    @include mq(md){
+      @include flexStyle(
+        $j-content: space-between
+      );
+    }
+    @include mq(xl){
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+  &__logo{
+    color: $white;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 50px;
+
+    @include fontSize(26);
+  }
+
+  &__listPc{
+    display: none;
+    @include mq(md){
+      display: flex;
+      gap: 30px;
+    }
+  }
+  &__itemPc{
+    @include mq(md){
+      list-style: none;
+      display: inline;
+    }
+  }
+  &__linkPc{
+    @include nav__menuLink(.7);
+  }
+  &__listSp{
+    position: absolute;
+    top: -30px;
+    right: 0;
+    height: calc(100vh + 30px);
+    width: 100%;
+    padding: 0;
+    z-index: 99;
+    background-color: $headingColor;
+    list-style: none;
+
+    @include flexStyle(
+      $direction: column,
+      $gap: 30px
+    );
+    display: none;
+  }
+  &__linkSp{
+    @include nav__menuLink();
+  }
+}
+
+.hamburger{
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  padding: 0;
+  z-index: 100;
+  background-color: transparent;
+  @include flexStyle(
+    $direction: column,
+    $gap: 7px
+  );
+  @include mq(md){
+    display: none;
+  }
+  &__content{
+    height: 3px;
+    width: 30px;
+    background-color: #FFFDFD;
+  }
+}

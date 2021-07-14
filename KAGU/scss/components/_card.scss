@@ -1,0 +1,163 @@
+.card-primary{
+  @include card();
+  @include mq(md){
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+  }
+  @media print{
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+  }
+  &__figure{
+    @include mq(md){
+      width: 50%;
+    }
+    @media print{
+      width: 50%;
+    }
+  }
+  &__body{
+    @include mq(md){
+      width: 50%;
+      padding: 0;
+    }
+    @media print{
+      width: 50%;
+    }
+    &--right{
+      @include mq(md){
+        margin-left: 5%;
+      }
+      @media print{
+        margin-left: 5%;
+      }
+    }
+    &--left{
+      @include mq(md){
+        order: -1;
+        margin-right: 5%;
+      }
+      @media print{
+        order: -1;
+        margin-right: 5%;
+      }
+    }
+  }
+  &__title{
+    @include mq(lg){
+      @include font-size(24);
+    }
+  }
+  &__copy{
+    @include mq(lg){
+      padding-bottom: 60px;
+    }
+  }
+  &__copy--first{
+    padding-bottom: 50px;
+    @include mq(lg){
+      padding-bottom: 60px;
+    }
+  }
+}
+.card-group{
+  @include mq(md){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3% 0;
+  }
+  @include mq(lg){
+    flex-wrap: nowrap;
+  }
+  @media print{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  &__middle{
+    @include mq(lg){
+      margin: 0 5%;
+    }
+    @media print{
+      margin: 0;
+    }
+  }
+}
+.card-secondary{
+  @include card($body-p-top: 18px);
+  @include mq(md){
+    width: 47%;
+    padding-top: 0;
+  }
+  @media print{
+    margin: 0 2%;
+  }
+  &__body{
+    @include mq(lg){
+      padding-top: 5%;
+    }
+  }
+  &__copy{
+    padding-bottom: 5%;
+    @include mq(lg){
+      padding-top: 5%;
+    }
+  }
+}
+.store-card{
+  @include card(
+    $card-p-top: 7px,
+    $body-p-top: 18px,
+    $body-p-bottom: 47px,
+    $copy-p-top: 16px,
+    $copy-p-bottom: 16px,
+  );
+  @include mq(md){
+    display: flex;
+    padding: 0;
+    align-items: center;
+    &:first-child{
+      padding-bottom: 60px;
+    }
+  }
+  @include mq(lg){
+    align-items: flex-start;
+  }
+  @media print{
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+  &__figure{
+    @include mq(md){
+      min-width: 50%;
+      margin-right: 5%;
+    }
+    @include mq(lg){
+      min-width: unset;
+      width: 33%;
+    }
+    @media print{
+      min-width: 50%;
+      margin-right: 5%;
+    }
+  }
+  &__body{
+    @include mq(md){
+      min-width: 50%;
+      padding: 0;
+    }
+    @media print{
+      min-width: 50%;
+      padding: 0;
+    }
+  }
+  &__link{
+    color: #333;
+    transition: .3s;
+    @include font-size(15);
+  }
+}

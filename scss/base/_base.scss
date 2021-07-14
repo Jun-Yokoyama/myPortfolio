@@ -1,0 +1,30 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  background-color:#daad86;
+  color: $mainColor;
+  @include fontSize(15);
+}
+a{
+  outline: none;
+}
+.container{
+  padding: 50px 20px 0;
+  @include mq(md){
+    padding-top: 60px;
+  }
+  @include mq(lg){
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 140px;
+    max-width: 1110px;
+  }
+}
+.overflow__hidden{
+  overflow: hidden;
+}

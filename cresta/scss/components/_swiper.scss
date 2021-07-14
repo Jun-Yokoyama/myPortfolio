@@ -1,0 +1,40 @@
+.swiper{
+  &-container{
+    display: none;
+    @include mq(md){
+      display: block;
+    }
+  }
+  &-slide{
+    position: relative;
+  }
+  &-heading{
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+    @include mq(lg){
+      bottom: 30%;
+    }
+    &-primary{
+      @include fontSize(40);
+      @include mq(lg){
+        @include fontSize(50);
+      }
+      @include mq(xl){
+        @include fontSize(70);
+      }
+    }
+    &-secondary{
+      @include fontSize(23);
+      @include mq(lg){
+        @include fontSize(33);
+      }
+      @include mq(xl){
+        @include fontSize(43);
+      }
+    }
+  }
+  &-img{
+    max-width: 100%;
+  }
+}

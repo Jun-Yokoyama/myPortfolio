@@ -1,0 +1,23 @@
+.body{
+  height: 100%;
+  font-family: "Montserrat",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  @include font-size(14);
+  @include mq(md){
+    @include font-size(15);
+  }
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+}
+.screen-reader-only{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}

@@ -1,0 +1,12 @@
+.store{
+  background-color: #f7f6f5;
+  padding: 31px 5% 0;
+  @include mq(md){
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  @media print{
+    padding-bottom: 30px;
+  }
+}

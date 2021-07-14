@@ -1,0 +1,11 @@
+.mail{
+  width: 17px;
+  height: 12px;
+  &--pc{
+    width: 18px;
+    height: 13px;
+    @media print{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.btn{
+  @include btn();
+  &--md-left{
+    @include mq(md){
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+.btn-footer{
+  @include btn(
+    $width: 220px,
+    $height: 45px,
+    $color: $white,
+    $bg-color: transparent,
+    $hover-bg: rgba($black, .2),
+  );
+  @include mq(lg){
+    &:hover{
+      border-color: #ddd;
+    }
+  }
+}

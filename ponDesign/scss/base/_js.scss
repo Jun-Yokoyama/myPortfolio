@@ -1,0 +1,36 @@
+.js_displayNone{
+  display: none;
+}
+
+.js_invisible{
+  visibility: hidden;
+}
+
+.js_overflowHidden{
+  overflow: hidden;
+}
+
+.js_navScrollColor{
+  background-color: $purple4;
+}
+
+.js_fadeIn{
+  display: block;
+  opacity: 0;
+  animation: .3s linear forwards fadeIn;
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}
+
+
+
+.js_displayBlock{
+  opacity: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+.recruit{
+  position: relative;
+  overflow: hidden;
+  &__wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 5%;
+  }
+  &__img{
+    max-width: 100%;
+    @include mq(md){
+      display: none;
+    }
+    @media print{
+      display: none;
+    }
+    &-lg{
+      display: none;
+      @include mq(md){
+        position: relative;
+        left: 50%;
+        display: block;
+        max-height: 430px;
+        min-width: 100%;
+        transform: translateX(-50%);
+      }
+      @media print{
+        position: relative;
+        left: 50%;
+        display: block;
+        max-height: 430px;
+        min-width: 100%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__body{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    @include mq(md){
+      padding-top: 40px;
+      padding-bottom: 45px;
+    }
+  }
+  &__copy{
+    color: $white;
+    letter-spacing: .2em;
+    line-height: 2.1;
+    text-align: center;
+    @include font-size(15);
+    @include mq(lg){
+      @include font-size(16);
+    }
+    @media print{
+      color: $white !important;
+    }
+  }
+}

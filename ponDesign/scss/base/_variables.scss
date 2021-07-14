@@ -1,0 +1,15 @@
+$mainColor: #333;
+$purple1: #391E88;
+$purple2: #250D65;
+$purple3: #B8AED5;
+$purple4: #1F094F;
+$bg-gray1: #F0F0F0;
+$bg-gray2: #F7F7F7;
+$gray1: #adb5bd;
+$white: #fff;
+$breakpoints: (
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+);

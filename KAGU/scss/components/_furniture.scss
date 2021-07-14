@@ -1,0 +1,12 @@
+.furniture{
+  padding: 28px 5% 0;
+  @include mq(md){
+    padding-top: 5%;
+  }
+  &__body{
+    padding-top: 37px;
+    @include mq(md){
+      padding-top: 3%;
+    }
+  }
+}

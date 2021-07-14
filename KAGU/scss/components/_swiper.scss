@@ -1,0 +1,53 @@
+.swiper{
+  &-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: 9;
+    background-color: $brown2;
+  }
+  &-heading{
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    color: $white;
+    font-weight: 500;
+    letter-spacing: .2em;
+    z-index: 10;
+    @include font-size(24);
+    @include mq(lg){
+      @include font-size(36);
+    }
+  }
+  &-img{
+    width: 100%;
+    @include mq(md){
+      display: none;
+    }
+    @media print{
+      display: none;
+    }
+    &-lg{
+      display: none;
+      @include mq(md){
+        display: block;
+        width: 100%;
+      }
+      @media print{
+        display: block;
+        width: 100vw;
+      }
+    }
+  }
+  &-pagination-bullets{
+    @include mq(xl){
+      bottom: 70px !important;
+    }
+    @media print{
+      display: none;
+    }
+  }
+}

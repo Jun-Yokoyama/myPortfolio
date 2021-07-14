@@ -1,0 +1,38 @@
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  @include mq(xl){
+    display: none;
+  }
+  @media print{
+    display: none;
+  }
+  &__top{
+    @include hamburger(24px);
+    &--is-open{
+      border-color: $white;
+      transform: translate(3px, 7px) rotate(45deg);
+    }
+  }
+  &__middle{
+    @include hamburger(20px);
+    // padding: 5px 0;
+    margin: 5px 0;
+    &--is-open{
+      opacity: 0;
+    }
+  }
+  &__bottom{
+    @include hamburger(16px);
+    &--is-open{
+      width: 24px;
+      border-color: $white;
+      transform: translate(3px, -7px) rotate(-45deg);
+    }
+  }
+}
+
+// done

@@ -1,0 +1,9 @@
+.footer{
+  height: 40px;
+  background-color: #bc987a;
+  &__copyright{
+    text-align: center;
+    line-height: 40px;
+    @include fontSize(10);
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Cresta Design</title>
+</head>
+
+
+<body id="body">
+
+  <header>
+
+    <nav class="nav" id="js_nav">
+
+      <div class="nav__wrapper">
+
+        <a href="index.html" class="nav__logo" aria-label="logo">Cresta Design</a>
+
+        <button class="hamburger" id="js_hamburger" aria-label="menu" aria-expanded="false">
+          <span class="hamburger__content" id="js_hamburgerTop" tabindex="-1" aria-hidden="true"></span>
+          <span class="hamburger__content" id="js_hamburgerMiddle" tabindex="-1" aria-hidden="true"></span>
+          <span class="hamburger__content" id="js_hamburgerBottom" tabindex="-1" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__listPc">
+          <li class="nav__itemPc"><a class="nav__linkPc" href="index.html#js_concept">Concept</a></li>
+          <li class="nav__itemPc"><a class="nav__linkPc" href="index.html#service">Service</a></li>
+          <li class="nav__itemPc"><a class="nav__linkPc" href="index.html#work">Work</a></li>
+          <li class="nav__itemPc"><a class="nav__linkPc" href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="nav__listSp" id="js_navMenuSp">
+          <li class="nav__itemSp"><a class="nav__linkSp" href="index.html#js_concept">Concept</a></li>
+          <li class="nav__itemSp"><a class="nav__linkSp" href="index.html#service">Service</a></li>
+          <li class="nav__itemSp"><a class="nav__linkSp" href="index.html#work">Work</a></li>
+          <li class="nav__itemSp"><a class="nav__linkSp" href="contact.html">Contact</a></li>
+        </ul>
+        
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="contactPagePagetop" id="js_pagetop">
+      <div class="layout">
+        <h2 class="contactPagePagetop__heading">Contact</h2>
+        <p class="contactPagePagetop__sectionNameBottom" aria-hidden="true">Contact us</p>
+      </div>
+    </section>
+
+    <section class="contactPageForm">
+
+      <div class="form">
+        <p class="form__title">お問い合わせ内容</p>
+
+        <div class="form__checkWrapper">
+          <div class="form__check">
+            <input type="checkbox" class="form__checkBtn" id="inquiryA" name="inquiry" value="1"
+              aria-labelledby="inquiry1">
+            <label class="form__checkLabel" for="inquiryA" id="inquiry1" aria-hidden="true">資料請求</label>
+          </div>
+
+          <div class="form__check">
+            <input type="checkbox" class="form__checkBtn" id="inquiryB" name="inquiry" value="2"
+              aria-labelledby="inquiry2">
+            <label class="form__checkLabel" for="inquiryB" id="inquiry2" aria-hidden="true">お電話でのご相談を希望</label>
+          </div>
+
+          <div class="form__check">
+            <input type="checkbox" class="form__checkBtn" id="inquiryC" name="inquiry" value="3"
+              aria-labelledby="inquiry3">
+            <label class="form__checkLabel" for="inquiryC" id="inquiry3" aria-hidden="true">申し込み</label>
+          </div>
+        </div>
+        <div class="form__userInfo">
+          <label class="form__label" for="name">担当者名</label>
+          <input type="text" class="form__text" id="name" required>
+
+          <label class="form__label" for="phone">電話番号</label>
+          <input type="tel" class="form__text" id="phone" required>
+
+          <label class="form__label" for="mail">メールアドレス</label>
+          <input type="email" class="form__text" id="mail" required>
+
+          <label class="form__label" for="text">その他</label>
+          <textarea class="form__textarea form__text" id="text" cols="30" rows="10" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--blackShadow">Submit</button>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    ©︎cresta.design all rights reserved
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

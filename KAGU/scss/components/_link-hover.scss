@@ -1,0 +1,8 @@
+.link-hover{
+  transition: .3s;
+  @include mq(lg){
+    &:hover{
+      text-shadow: 0 0 5px $theme-color;
+    }
+  }
+}

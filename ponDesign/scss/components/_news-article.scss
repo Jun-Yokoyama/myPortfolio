@@ -1,0 +1,101 @@
+.news-article-page{
+  padding: 40px 20px 80px;
+  @include mq(md){
+    @include layout-center(750px);
+    padding: 70px 25px 110px;
+  }
+}
+.news-article{
+  padding-bottom: 40px;
+  &__heading{
+    font-weight: 400;
+    margin-bottom: 10px;
+    @include font-size(22);
+    @include mq(md){
+      margin-bottom: 15px;
+      @include font-size(32);
+    }
+  }
+  &__figure{
+    margin-top: 10px;
+  }
+  &__img{
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  &__copy{
+    margin-top: 15px;
+  }
+  &__sub-heading1{
+    position: relative;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-left: 15px;
+    @include font-size(18);
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 6px;
+      border-radius: 50px;
+      background-color: $purple1;
+    }
+    @include mq(md){
+      @include font-size(24);
+    }
+  }
+  &__sub-heading2{
+    font-weight: 600;
+    margin-top: 20px;
+    @include font-size(16);
+    @include mq(md){
+      @include font-size(18);
+    }
+  }
+}
+
+.sns{
+  display: flex;
+  flex-wrap: wrap;
+  &__line{
+    margin-left: 13px;
+    &-img{
+      width: 20px;
+    }
+  }
+}
+.hatena-bookmark-button-frame{
+  margin-left: 13px;
+}
+
+.news-article-pagenation{
+  padding-top: 40px;
+  
+  &__inner{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid $purple3;
+    border-bottom: 1px solid $purple3;
+  }
+
+  &__link1{
+    width: 50%;
+    color: $purple1;
+    padding: 20px 10px;
+    @include font-size(12);
+    @include mq(md){
+      padding-left: 30px;
+    }
+    &:first-child{
+      border-right: 1px solid $purple3;
+    }
+  }
+  &__link2{
+    display: block;
+    color: $purple1;
+    margin-top: 15px;
+    text-align: center;
+  }
+}

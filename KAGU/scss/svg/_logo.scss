@@ -1,0 +1,6 @@
+.logo{
+  @include logo();
+  &--theme-color{
+    @include logo($mq: xl, $color: $theme-color)
+  }
+}

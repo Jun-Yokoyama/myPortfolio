@@ -1,0 +1,12 @@
+.swiper{
+  &-container{
+    margin: 0 20px;
+    z-index: 2;
+    @include mq(md){
+      width: 60%;
+    }
+  }
+  &-img{
+    max-width: 100%;
+  }
+}

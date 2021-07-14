@@ -1,0 +1,38 @@
+.btn{
+  display: block;
+  width: 220px;
+  height: 60px;
+  border-radius: 50rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 60px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  user-select: none;
+  &--transparent{
+    border: 1px solid $white;
+    &:hover{
+      background-color: $white;
+      color: $purple1;
+    }
+    @include mq(md){
+      margin: 0 auto;
+    }
+  }
+  &--purple{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #6B2E9C 0%, $purple2 51%, #6B2E9C 100%);
+    background-size: 200% auto;
+    &:hover{
+      color: $white;
+      background-position: right center;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.dropdown{
+  @include footer-link($t-decoration: none);
+  @include mq(lg){
+    padding: 0 0 5px;
+  }
+  @media print{
+    height: unset;
+    line-height: unset;
+  }
+  &__icon{
+    position: absolute;
+    width: 27px;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    @include mq(lg){
+      display: none;
+    }
+    @media print{
+      display: none;
+    }
+    &-minus{
+      display: none;
+    }
+    &--open{
+      opacity: 0;
+    }
+  }
+  &__contents{
+    position: relative;
+    height: 0;
+    transition: .3s;
+    @include mq(lg){
+      height: auto;
+    }
+    &--open{
+      height: 100px;
+    }
+  }
+  &__item{
+    list-style: none;
+  }
+  &__link{
+    @include footer-link();
+    @include mq(lg){
+      padding-bottom: 5px;
+      padding-left: 5%;
+    }
+    @media print{
+      height: unset;
+      line-height: unset;
+    }
+  }
+}

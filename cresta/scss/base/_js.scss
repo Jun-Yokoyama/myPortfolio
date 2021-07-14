@@ -1,0 +1,80 @@
+.js_spMenuFadeIn{
+  display: flex;
+  opacity: 0;
+  animation: fadeIn .3s forwards linear;
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+}
+
+.js_burgerSlideTop{
+  animation: burgerSlideTop 1s forwards;
+  @keyframes burgerSlideTop{
+    0%{
+      transform: translateX(0);
+    }
+    60%{
+      transform: translateX(80px);
+    }
+    65%{
+      transform: translate(100px, -50px) rotate(-45deg);
+    }
+    100%{
+      transform: translate(0, 10px) rotate(-45deg);
+    }
+  }
+}
+
+.js_burgerSlideMiddle{
+  animation: burgerSlideMiddle 1s forwards;
+@keyframes burgerSlideMiddle{
+  10%{
+    transform: translateX(0);
+  }
+  60%{
+    transform: translateX(80px);
+    opacity: 1;
+  }
+  65%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+}
+
+.js_burgerSlideBottom{
+  animation: burgerSlideBottom 1s forwards;
+  @keyframes burgerSlideBottom{
+    20%{
+      transform: translateX(0);
+    }
+    60%{
+      transform: translateX(80px);
+    }
+    65%{
+      transform: translate(100px, 50px) rotate(45deg);
+    }
+    100%{
+      transform: translate(0, -10px) rotate(45deg);
+    }
+  }
+}
+
+.js_overflowHidden{
+  overflow: hidden;
+}
+
+.js_navScroll{
+  transform: translateY(-25px);
+  background-color: $headingColor;
+  @include mq{
+    transform: translateY(10px);
+  }
+}

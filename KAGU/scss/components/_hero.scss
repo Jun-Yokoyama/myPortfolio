@@ -1,0 +1,9 @@
+.hero{
+  padding-top: 60px;
+  @include mq(xl){
+    padding-top: 80px;
+  }
+  @media print{
+    padding-top: 0;
+  }
+}

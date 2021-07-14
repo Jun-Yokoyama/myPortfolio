@@ -1,0 +1,36 @@
+.about{
+  &__wrapper{
+    margin-top: 25px;
+    @include mq(md){
+      margin-top: 35px;
+    }
+    @include mq(lg){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 80px;
+    }
+  }
+  &__figure{
+    @include mq(md){
+      width: 50%;
+      float: left;
+      margin-right: 20px;
+    }
+    @include mq(lg){
+      float: unset;
+      width: auto;
+    }
+  }
+  &__img{
+    max-width: 100%;
+  }
+  &__copy{
+    margin-top: 20px;
+    @include mq(md){
+      margin: 0;
+    }
+    @include mq(lg){
+      margin-left: 20px;
+    }
+  }
+}

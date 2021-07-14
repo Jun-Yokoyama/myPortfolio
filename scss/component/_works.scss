@@ -1,0 +1,22 @@
+.works{
+  &__info{
+    margin-top: 15px;
+    text-align: right;
+    @include fontSize(12);
+    @include mq(lg){
+      @include fontSize(15);
+    }
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    @include mq(md){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include mq(lg){
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+  }
+}

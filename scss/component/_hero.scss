@@ -1,0 +1,65 @@
+.hero{
+  position: relative;
+  background: linear-gradient(to right, rgba(#000, .5), rgba(#000, .3));
+  &__img{
+    position: relative;
+    left: 50%;
+    bottom: -5px;
+    width: 100%;
+    max-width: 1300px;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  &__heading{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    color: $white;
+    transform: translateY(-50%);
+    font-family: 'Inter',sans-serif;
+    &Inner{
+      padding-left: 5%;
+      @include mq(lg){
+        position: relative;
+        left: 50%;
+        max-width: 1311px;
+        transform: translateX(-50%);
+      }
+      @include mq(xl){
+      }
+    }
+    &Primary{
+      font-weight: 700;
+      @include fontSize(25);
+      @include mq(md){
+        @include fontSize(40);
+      }
+      @include mq(lg){
+        @include fontSize(50);
+      }
+      @include mq(xl){
+        @include fontSize(60);
+      }
+    }
+    &Secondary{
+      @include fontSize(20);
+      @include mq(md){
+        @include fontSize(30);
+      }
+      @include mq(lg){
+        @include fontSize(40);
+      }
+      @include mq(xl){
+        @include fontSize(50);
+      }
+    }
+  }
+  &__language{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: $white;
+    text-decoration: none;
+  }
+}

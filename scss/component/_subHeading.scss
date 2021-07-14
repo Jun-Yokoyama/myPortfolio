@@ -1,0 +1,16 @@
+.subHeading{
+  color: #fffff0;
+  font-weight: 700;
+  font-family: 'Inter',sans-serif;
+  line-height: .9;
+  @include fontSize(40);
+  @include mq(md){
+    @include fontSize(50);
+  }
+  @include mq(lg){
+    @include fontSize(70);
+  }
+  &--right{
+    text-align: right;
+  }
+}

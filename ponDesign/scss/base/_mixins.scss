@@ -1,0 +1,42 @@
+@mixin font-size($size: 24, $base: 16){
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+@mixin mq($breakpoint: md){
+  @media #{map-get($breakpoints, $breakpoint)}{
+   @content;
+  }
+};
+
+@mixin burger-bans ($pos: 14px){
+  top: $pos;
+  transform: translate(-50%);
+  @extend %burgerMeat;
+}
+
+@mixin js_burgerTrans($transY: 7px, $deg: 45deg){
+  transform: translate(-50%, $transY) rotate($deg);
+  transition: all .3s ease;
+}
+
+@mixin menu-links($margin: 30px){
+  display: inline-block;
+  color: $white;
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1;
+  margin-right: $margin;
+  text-decoration: none;
+  transition: .3s;
+  &:hover{
+    color: $white;
+  }
+}
+
+@mixin layout-center($max-width: 1100px){
+  position: relative;
+  left: 50%;
+  max-width: $max-width;
+  transform: translateX(-50%);
+}
