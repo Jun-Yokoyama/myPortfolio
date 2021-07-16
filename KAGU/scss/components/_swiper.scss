@@ -16,8 +16,12 @@
     color: $white;
     font-weight: 500;
     letter-spacing: .2em;
+    white-space: pre-line;
     z-index: 10;
     @include font-size(24);
+    @include mq(md){
+      white-space: normal;
+    }
     @include mq(lg){
       @include font-size(36);
     }

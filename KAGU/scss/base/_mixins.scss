@@ -41,6 +41,7 @@
       line-height: 2;
       padding-top: $copy-p-top;
       padding-bottom: $copy-p-bottom;
+      white-space: pre-line;
       @include font-size(15);
     }
 
