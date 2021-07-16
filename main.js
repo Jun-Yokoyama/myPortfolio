@@ -14,7 +14,7 @@
         $(".mainNav__menuSp").stop().slideToggle();
         $("body").toggleClass('overflow__hidden');
         ariaExpand();
-        let adjust = -30;
+        let adjust = 30;
         let speed = 400;
         let href= $(this).attr("href");
         let target = $(href == "#" || href == "" ? 'html' : href);
