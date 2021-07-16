@@ -958,8 +958,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .works {
-    padding: 110px 0 0;
-    background-color: #fff;
+    padding: 20px 0 0;
   }
 }
 
@@ -1003,10 +1002,11 @@ a {
 
 @media screen and (min-width: 768px) {
   .works__inner {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 65%;
     height: 100%;
-    position: absolute;
-    right: 0;
   }
 }
 
@@ -1237,6 +1237,10 @@ a {
   .swiper-container {
     width: 60%;
   }
+}
+
+.swiper-slide {
+  width: 100% !important;
 }
 
 .swiper-img {
