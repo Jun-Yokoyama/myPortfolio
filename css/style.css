@@ -327,7 +327,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
   background-color: #daad86;
   color: #4d3b34;
   font-size: 15px;
@@ -398,7 +398,6 @@ a {
 .mainNav__linkSp {
   display: inline-block;
   color: #fffff0;
-  font-family: 'Inter',sans-serif;
   margin: 15px 0;
   text-decoration: none;
   -webkit-transition: .3s;
@@ -434,7 +433,6 @@ a {
 
 .mainNav__linkPc {
   color: #fffff0;
-  font-family: 'Inter',sans-serif;
   text-decoration: none;
   font-size: 20px;
   font-size: 1.25rem;
@@ -535,7 +533,6 @@ a {
   color: #fff;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: 'Inter',sans-serif;
 }
 
 .hero__headingInner {
@@ -671,7 +668,6 @@ a {
 .subHeading {
   color: #fffff0;
   font-weight: 700;
-  font-family: 'Inter',sans-serif;
   line-height: .9;
   font-size: 40px;
   font-size: 2.5rem;

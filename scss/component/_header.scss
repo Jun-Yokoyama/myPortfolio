@@ -22,7 +22,6 @@
   &__linkSp{
     display: inline-block;
     color: #fffff0;
-    font-family: 'Inter',sans-serif;
     margin: 15px 0;
     text-decoration: none;
     transition: .3s;
@@ -50,7 +49,6 @@
   }
   &__linkPc{
     color: #fffff0;
-    font-family: 'Inter',sans-serif;
     text-decoration: none;
     @include fontSize(20);
   }

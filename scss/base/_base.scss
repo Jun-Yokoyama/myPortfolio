@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  font-family: 'Noto Sans JP', 'Inter', sans-serif;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
   background-color:#daad86;
   color: $mainColor;
   @include fontSize(15);
